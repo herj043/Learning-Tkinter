@@ -1,12 +1,13 @@
-import tkinter as tk
+import PySimpleGUI as sg
 
-window = tk.Tk()
-window.title("Hello wold")
-window.geometry("300x300")
+layout = [[sg.Text('Input text test.')],      
+                 [sg.InputText()],      
+                 [sg.Submit(), sg.Cancel()]]      
 
-hello = tk.Label(text="Hello world!")
-hello.pack()
-button = tk.Button(text="Click me!")
-button.pack()
+window = sg.Window('PySimpleGUI Window', layout)    
 
-tk.mainloop()
+event, values = window.read()    
+window.close()
+
+text_input = values[0]    
+sg.popup('You entered', text_input)
