@@ -1,8 +1,8 @@
 import PySimpleGUI as sg
 
-layout = [[sg.Text('Input text test.')],      
-                 [sg.InputText()],      
-                 [sg.Submit(), sg.Cancel()]]      
+layout = [[sg.Text('Input text test.')],
+                  [sg.InputText()],
+                  [sg.Submit(), sg.Cancel()]]      
 
 window = sg.Window('PySimpleGUI Window', layout)    
 
