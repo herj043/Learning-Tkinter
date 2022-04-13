@@ -1,2 +1,2 @@
-# PySimpleGUI BMI calculator
+# Tkinter Study for Routine app
 Jeremy Her
