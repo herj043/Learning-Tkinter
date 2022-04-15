@@ -1,5 +1,8 @@
 from tkinter import *
 
+##############################################
+### ! "pre" variable doesn't work function ###
+##############################################
 def open_windows():
   win = Tk()
   
@@ -7,7 +10,8 @@ def open_windows():
   # Counts the number of clicks
   pre = 0
   
-  def click(pre):
+  def click():
+    global pre
     pre += 1
     
     my_label = Label(win,text= txt_box.get() + " " + str(pre),
@@ -53,6 +57,3 @@ def open_windows():
 
   win_two.mainloop()
   win.mainloop()
-
-
-  
