@@ -1,12 +1,11 @@
-import test_windows as test_win
-import calc
+from Windows import test_windows as test_win, calc
 import replit
 import time
 
 # Selecting windows
 def select_windows():
-  selection = input("Open a window (windows, calculator): ")
-  if selection == "windows" or selection == "1":
+  selection = input("Open a window (window, calculator): ")
+  if selection == "window" or selection == "1":
     print("windows running")
     test_win.open_windows()
     print("windows end")
