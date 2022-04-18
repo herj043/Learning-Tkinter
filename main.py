@@ -5,12 +5,12 @@ import time
 # Selecting windows
 def select_windows():
   selection = input("Open a window (window, calculator): ")
-  if selection == "window" or selection == "1":
+  if selection == "window" or selection == "1" or selection == "win":
     print("windows running")
     test_win.open_windows()
     print("windows end")
     
-  elif selection == "calculator" or selection == "2":
+  elif selection == "calculator" or selection == "2" or selection == "cal":
     print("calculator running")
     calc.open_calculator()
     print("calculator end")
