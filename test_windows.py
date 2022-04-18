@@ -1,14 +1,16 @@
 from tkinter import *
 
-##############################################
-### ! "pre" variable doesn't work function ###
-##############################################
+################################################
+### ! "pre" variable doesn't work function ! ###
+################################################
+pre = 0
 def open_windows():
   win = Tk()
-  
+  global pre
+  pre = 0
   
   # Counts the number of clicks
-  pre = 0
+
   
   def click():
     global pre
