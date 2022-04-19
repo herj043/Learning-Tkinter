@@ -4,7 +4,8 @@ import time
 
 # Selecting windows
 def select_windows():
-  selection = input("Open a window (window, calculator): ")
+  #selection = input("Open a window (window, calculator): ")
+  selection = "cal"
   if selection == "window" or selection == "1" or selection == "win":
     print("windows running")
     test_win.open_windows()

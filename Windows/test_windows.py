@@ -6,11 +6,10 @@ from tkinter import *
 pre = 0
 def open_windows():
   win = Tk()
+
+  # Counts the number of clicks
   global pre
   pre = 0
-  
-  # Counts the number of clicks
-
   
   def click():
     global pre
@@ -20,7 +19,7 @@ def open_windows():
                      bg="#ffffff")
     my_label.pack()
   
-    # Select Color according to the number 
+    # Select Color according to the number
     if pre % 7 == 1:
       win_two.config(bg="#0000ff")
     elif pre % 7 == 2:
@@ -35,7 +34,7 @@ def open_windows():
       win_two.config(bg="#ff00ff")
     else:
       win_two.config(bg="#ffffff")
-  
+
   # Creates Textbox 
   txt_box = Entry(win, width=30, bg="black", fg="white")
   txt_box.pack()
