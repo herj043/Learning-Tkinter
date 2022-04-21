@@ -44,7 +44,7 @@ def open_calculator():
                     command=lambda: button_click(8))
   button_9 = Button(calculator_win, text="9", padx=40, pady=20,
                     command=lambda: button_click(9))
-  button_0 = Button(calculator_win, text="0", padx=40, pady=20,
+  button_0 = Button(calculator_win, text="0", padx=40, pady=50,
                     command=lambda: button_click(0))
   
   button_add = Button(calculator_win, text="+", padx=40, pady=20,
@@ -71,10 +71,10 @@ def open_calculator():
   button_8.grid(row=1, column=1)
   button_9.grid(row=1, column=2)
   
-  button_0.grid(row=4, column=0)
+  button_0.grid(row=4, column=0, rowspan=2)
   button_clear.grid(row=4, column=1, columnspan=2)
 
-  button_add.grid(row=5, column=0)
+  button_add.grid(row=5, column=2)
   button_subtract.grid(row=5, column=1)
   
   calculator_win.mainloop()

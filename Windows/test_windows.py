@@ -1,9 +1,7 @@
 from tkinter import *
 
-################################################
-### ! "pre" variable doesn't work function ! ###
-################################################
 pre = 0
+
 def open_windows():
   win = Tk()
 
