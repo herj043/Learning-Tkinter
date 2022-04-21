@@ -2,10 +2,18 @@ from Windows import test_windows as test_win, calc
 import replit
 import time
 
-# Selecting windows
+# Selecting windows from user input
 def select_windows():
-  #selection = input("Open a window (window, calculator): ")
-  selection = "cal"
+  # Default selection (Used for testing code more effiecient)
+  selection = True
+  skip_selection = False
+  if selection == True:
+    selection = input("Open a window (window, calculator): ")
+  else:
+    selection = "cal"
+    skip_selection = True
+
+  # Selects Windows
   if selection == "window" or selection == "1" or selection == "win":
     print("windows running")
     test_win.open_windows()
@@ -19,8 +27,8 @@ def select_windows():
   else:
     if selection !="exit":
       print("Invalid Input")
-    
-  if selection != "exit":
+      
+  if (selection != "exit") and (skip_selection != True):
     time.sleep(0.5)
     replit.clear()
     select_windows()
