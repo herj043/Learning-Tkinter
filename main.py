@@ -1,16 +1,16 @@
-from Windows import test_windows as test_win, calc, color_select as c_select
+from Windows import test_windows as test_win, calc,color_select as c_select
 import replit
 import time
 
 # Selecting windows from user input
 def select_windows():
   # Default selection (Used for testing code more effiecient)
-  selection = False
+  selection = True
   skip_selection = False
   if selection == True:
     selection = input("Open a window (window, calculator): ")
   else:
-    selection = "3"
+    selection = "2"
     skip_selection = True
 
   # Selects Windows
@@ -28,6 +28,7 @@ def select_windows():
     print("color running")
     c_select.open_color()
     print("color end")
+
   else:
     if selection !="exit":
       print("Invalid Input")
